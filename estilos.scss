@@ -1,0 +1,133 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --very-dark-bluee: hsl(216, 50%, 16%);
+    --very-dark-blueee: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: 'Outfit';
+    font-size: 10px;
+    background-color: var(--very-dark-blue);
+}
+
+h1{
+  font-size: 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    background-color: var(--very-dark-bluee);
+    width: 290px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 7px 7px 7px hsl(219, 55%, 6%);
+    padding: 20px;
+
+    &-img{
+
+        width: 250px;
+        height: 250px;
+        overflow: inherit;
+        border-radius: 5%;
+    }
+    &-body{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-header{
+            color: white;
+            font-size: 18px;
+            margin-top: 18px; 
+        }
+
+        &-text{
+            color: hsl(217, 38%, 67%);
+            font-size: 15px;
+            margin-top:2px
+        }
+
+        &-down{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+            width:250px;
+            border-bottom: 1px solid var(--very-dark-blueee);
+
+            &-one{
+                display: flex;
+                align-items: center;
+                gap:5px;
+                
+                &-ethereum{
+                    font-size: 14px;
+                    color: hsl(178, 100%, 50%);
+                    font-weight: 600;
+            }
+
+
+            }
+
+            &-two{
+                display: flex;
+                align-items: center;
+                gap:5px;
+                
+                &-time{
+                    font-size: 14px;
+                    color: hsl(217, 38%, 67%);
+                    font-weight: 600; 
+                }
+            }
+        }
+
+        &-two{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap:5px;
+            width:210px;
+        }
+        
+    }
+
+    &-footer{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+
+        &-img{
+            width: 30px;
+            height: 30px;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+
+        &-create{
+            color:hsl(217, 38%, 67%);
+            font-size: 12px;
+
+            span{
+                color: white;
+            }
+        }
+    }
+}      
